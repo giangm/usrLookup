@@ -113,9 +113,6 @@ def lookup(websites, username):
     table = PrettyTable()
     table.field_names = ['Website Name', 'URL']
 
-    for i in tqdm.tqdm(range(0, 10), leave = False, ):
-        time.sleep(0.05)
-
     print(Fore.YELLOW + f'[+] Searching for username: {username}')
 
     # Searching username
