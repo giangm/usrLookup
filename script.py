@@ -129,7 +129,7 @@ def lookup(websites, username):
                     table.add_row([f'{name.title()}', URL])
                 else:
                     # Username was not detected on the website, could be false positive
-                    print(Fore.RED + f'[+] MATCH FOUND BUT FALSE POSITIVE - {username} has not been detected on the {name.title()} website.')
+                    print(Fore.RED + f'[-] MATCH FOUND BUT FALSE POSITIVE - {username} has not been detected on the {name.title()} website.')
 
                 matched_counter += 1
         except:
